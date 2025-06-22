@@ -1,0 +1,87 @@
+
+   <!-- TopBar  -->
+<div class="px-4 py-2hidden md:block bg-[var(--color-light)] py-2 px-4 dark:bg-[#1a1a1a] dark:text-white">
+   <div class="flex items-center justify-between">
+    <div class="jordan-air">
+        <a href=""> <img src="assets/icons/jordan.svg" class="dark:invert" width="20px" height="20px" alt=""></a>
+    </div>
+    <div class="flex md:gap-x-4 gap-x-2 text-[12px] dark:text-gray-300">
+        <a href="#">Find a Store</a>
+        <span>|</span>
+        <a href="#">Help</a>
+        <span>|</span>
+        <a href="#">Join Us</a>
+        <span>|</span>
+        <a href="#">Sign In</a>
+    </div>
+   </div>
+</div>
+
+<!-- Desktop Header -->
+<header class="relative header bg-white dark:bg-[#0D0D0D] shadow-sm z-10 mx-auto backdrop-blur-2xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="./"><img src="assets/logo.png" class="w-[120px] logo dark:invert"></a>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden lg:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition-colors nav-link dark:text-[#808080]">New</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition-colors nav-link dark:text-[#808080]">Men</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition-colors nav-link dark:text-[#808080]">Women</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition-colors nav-link dark:text-[#808080]">Sports</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition-colors nav-link dark:text-[#808080]">Sneakers</a>
+            </nav>  
+            
+            <!-- Right side icons -->
+            <div class="flex items-center md:space-x-4 ">
+                <div class="relative hidden lg:block">
+                    <input type="text" placeholder="Search" class="pl-10 pr-4 py-2 rounded-full focus:outline-none bg-[var(--color-light)] dark:bg-[#1B1B1B]/20 dark:text-[#808080]">
+                    <i data-lucide="search" class="absolute left-3 top-2.5 h-5 w-5 text-gray-400"></i>
+                </div>
+                <a href="#" class=" lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors dark:text-[#808080]">
+                    <i data-lucide="search" class="h-5 w-5 dark:text-[#808080]"></i>
+                </a>
+                <a href="wishlist.html" class="p-2 hover:bg-gray-100 rounded-full transition-colors dark:text-[#808080]">
+                    <i data-lucide="heart" class="h-5 w-5 dark:text-[#808080]"></i>
+                </a>
+                <a href="cart.html" class="p-2 hover:bg-gray-100 rounded-full transition-colors relative dark:text-[#808080]">
+                    <i data-lucide="shopping-cart" class="h-5 w-5 dark:text-[#808080]"></i>
+                    <span class="absolute top-0 right-0 bg-black dark:bg-[#808080] text-white text-[10px] w-[15px] h-[15px] flex items-center justify-center rounded-full">3</span>
+                </a>
+                <a href="#" class="mobile-nav lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors relative dark:text-[#808080]">
+                    <i data-lucide="align-justify" class="h-5 w-5 dark:text-[#808080]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Side Drawer -->
+<div id="mobileDrawer" class="fixed top-0 left-0 w-[80%] sm:w-[300px] h-full bg-white dark:bg-[#0D0D0D] z-50 shadow-lg hidden">
+<div class="flex flex-col h-full  py-6 px-6">
+
+  <!-- Top: Close Icon -->
+  <div class="flex justify-between">
+    <a href="https://www.jordanair.com/"><img src="assets/logo.png" class="dark:invert" width="120px" alt=""></a>
+    <button id="drawerClose" class="text-black dark:text-[#808080]">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <!-- Middle: Navigation Items -->
+  <nav class="mt-6 space-y-6 text-lg font-medium">
+    <a href="#" class="flex justify-between items-center dark:text-[#808080]">New </i></a>
+    <a href="#" class="flex justify-between items-center dark:text-[#808080]">Men </i></a>
+    <a href="#" class="flex justify-between items-center dark:text-[#808080]">Women </i></a>
+    <a href="#" class="flex justify-between items-center dark:text-[#808080]">Kids </i></a>
+    <a href="#" class="flex justify-between items-center dark:text-[#808080]">Jordan </i></a>
+    <a href="#" class="flex justify-between items-center dark:text-[#808080]">Sport </i></a>
+  </nav>
+</div>
+</div>
+
+
+

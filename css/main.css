@@ -1,0 +1,63 @@
+:root {
+    --title-font: "Oswald", sans-serif;
+    --color-black: #000000;   
+    --color-dark: #4C4C4C;   
+    --color-light: #F6F6F8;  
+    --color-white: #FFFFFF; 
+    --color-bg: #FFFFFF;      
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+h1, h2, h3 {
+    font-family: var(--title-font);
+  }
+.container-fluid {
+    padding: 0;
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+  
+/* loading webiste style */
+.loader-text {
+  letter-spacing: 0.5em;
+  display: flex;
+  gap: 0.1em;
+}
+
+.loader-text span {
+  opacity: 0;
+  transform: translateY(30px);
+  display: inline-block;
+}
+
+section.horizontal .item {
+  padding: 0 20px;
+  position: relative;
+  flex: 0 0 auto;
+  height: calc(100vh - 480px);
+  display: flex;
+  align-items: center;
+  line-height: 1.7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: transparent;
+}
+.item-img img {
+	width: 100%;
+	height: 216px;
+}
+
+section.horizontal .item .item-text h2 {
+  font-size: 15rem;
+}
+
