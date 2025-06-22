@@ -113,36 +113,10 @@ const cartDrawer = document.getElementById('cartDrawer');
   });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 // hero slider
-const swiper = new Swiper('.heroSlider', {
+const heroSlider = new Swiper('.heroSlider', {
     loop: true,
     autoplay: {
       delay: 3000,
@@ -157,5 +131,62 @@ const swiper = new Swiper('.heroSlider', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+
+  // product slider
+
+  const productSlider = new Swiper(".productSlider", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    centeredSlides: false,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
+        slidesPerGroup: 2,
+      },
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

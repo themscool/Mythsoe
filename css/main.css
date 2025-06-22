@@ -46,9 +46,8 @@ align-items: center;
 -moz-user-select: none;
 -ms-user-select: none;
 user-select: none;
-border-right: 1px solid rgba(0, 0, 0, 0.06);
 background-color: transparent;
-padding: 5px;
+padding: 20px 5px;
 }
 .item-img img {
 	width: 100%;
@@ -68,3 +67,6 @@ section.horizontal .item .item-text.stroke h2 {
 line-height: 100%;
 }
 
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+	z-index: -1 !important;
+}
