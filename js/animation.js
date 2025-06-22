@@ -103,7 +103,7 @@ x: () => -(animWrap.scrollWidth - window.innerWidth),
     trigger: section,
     start: "top bottom",
     end: () => "+=" + (animWrap.scrollWidth - window.innerWidth),
-    scrub: true,
+    scrub: 1.5,
     // markers: true 
   }
 });
