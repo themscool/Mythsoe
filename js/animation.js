@@ -1,13 +1,10 @@
-gsap.from(".logo", {duration: 1, y: -50, opacity: 0, ease: "power2.out"});
-gsap.from(".nav-link", {duration: 1, y: -30, opacity: 0, stagger: 0.1, delay: 0.3, ease: "power2.out"});
-gsap.from(".content", {duration: 1, y: -30, opacity: 0, stagger: 0.1, delay: 0.3, ease: "power2.out"});
-
-
-
 // loading site js
+gsap.registerPlugin(ScrollTrigger);
+
+// Loader animation
 const loaderText = document.querySelector(".loader-text");
 const text = loaderText.textContent;
-loaderText.textContent = ""; // clear existing
+loaderText.textContent = "";
 
 text.split("").forEach(letter => {
   const span = document.createElement("span");
@@ -15,7 +12,6 @@ text.split("").forEach(letter => {
   loaderText.appendChild(span);
 });
 
-// Animate with GSAP
 gsap.to(".loader-text span", {
   opacity: 1,
   y: 0,
@@ -29,6 +25,64 @@ gsap.to(".loader-text span", {
       duration: 0.8,
       onComplete: () => {
         document.querySelector(".loader").style.display = "none";
+//  start animation all content after loading
+        gsap.from(".logo", {
+          scrollTrigger: {
+            trigger: ".logo",
+            start: "top 80%", // when top of .logo hits 80% of viewport
+          },
+          duration: 1,
+          y: -50,
+          opacity: 0,
+          ease: "power2.out"
+        });
+
+        gsap.from(".nav-link", {
+          scrollTrigger: {
+            trigger: ".nav-link", // or a wrapper if you have multiple
+            start: "top 90%",
+          },
+          duration: 1,
+          y: -30,
+          opacity: 0,
+          stagger: 0.1,
+          ease: "power2.out"
+        });
+
+        gsap.from(".content", {
+          scrollTrigger: {
+            trigger: ".content",
+            start: "top 85%",
+          },
+          duration: 1,
+          y: -30,
+          opacity: 0,
+          stagger: 0.1,
+          ease: "power2.out"
+        });
+        gsap.from(".horizontal", { // fading horizonatal text sections
+          scrollTrigger: {
+            trigger: ".horizontal",
+            start: "top 85%",
+          },
+          duration: 1.5,
+          y: -30,
+          opacity: 0,
+          stagger: 0.1,
+          ease: "power2.out"
+        }),
+
+        gsap.from (".product-ad h1,h2", {
+          scrollTrigger: {
+            trigger: ".product-ad",
+            start: "top 85%",
+          },
+          duration: 1.5,
+          y: -30,
+          opacity: 0,
+          stagger: 0.1,
+          ease: "power2.out"
+        })
       }
     });
   }
@@ -36,8 +90,6 @@ gsap.to(".loader-text span", {
 
 
 // animation text with scrolling
-gsap.registerPlugin(ScrollTrigger);
-
 const section = document.querySelector('section.horizontal');
 const pinWrap = section.querySelector('.pin-wrap');
 const animWrap = pinWrap.querySelector('.animation-wrap');
