@@ -36,30 +36,22 @@ gsap.to(".loader-text span", {
 
 
 // animation text with scrolling
-const horizontalSections = gsap.utils.toArray('section.horizontal')
+gsap.registerPlugin(ScrollTrigger);
 
-horizontalSections.forEach(function (sec, i) {	
-  
-  var thisPinWrap = sec.querySelector('.pin-wrap');
-  var thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
-  
-  var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
+const section = document.querySelector('section.horizontal');
+const pinWrap = section.querySelector('.pin-wrap');
+const animWrap = pinWrap.querySelector('.animation-wrap');
 
-  gsap.fromTo(thisAnimWrap, { 
-    x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
-  }, { 
-    x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
-    ease: "none",
-    scrollTrigger: {
-      trigger: sec,		
-      start: "top top",
-      end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
-      pin: thisPinWrap,
-      invalidateOnRefresh: true,
-      // anticipatePin: 1,
-      scrub: true,
-      markers: true,
-    }
-  });
-
-});	
+gsap.fromTo(animWrap, {
+  x: 0,
+}, {
+x: () => -(animWrap.scrollWidth - window.innerWidth),
+  ease: "none",
+  scrollTrigger: {
+    trigger: section,
+    start: "top bottom",
+    end: () => "+=" + (animWrap.scrollWidth - window.innerWidth),
+    scrub: true,
+    // markers: true 
+  }
+});
