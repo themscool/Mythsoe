@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-[var(--color-white)] dark:bg-[#1A1A1A] relative" id="shop-details">
+<body class="bg-[var(--color-white)] dark:bg-[#1A1A1A] relative">
     <div
         class="loader hidden items-center justify-center z-50 bg-white dark:bg-[#1A1A1A] w-full h-screen fixed top-0 left-0 bottom-0 overflow-hidden">
         <h1 class="loader-text dark:text-white md:text-6xl text-2xl">MYTHSOE</h1>
@@ -110,204 +110,110 @@
     </section>
 
 
-    <section class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <!-- Product Image -->
-        <div class="relative">
-            <img src="assets/p1.png" alt="Shoe" class="rounded-lg w-full h-[500px] object-cover" />
-            <button class="absolute top-2 left-2 bg-white dark:bg-black p-2 rounded-full shadow">
-                <i data-lucide="heart" class="w-5 h-5 text-black dark:text-[#808080]"></i>
-            </button>
-        </div>
-
-        <!-- Product Info -->
-        <div>
-            <h1 class="text-xl font-semibold mb-2 dark:text-[#808080]">Dunk Mythsoe</h1>
-            <span class="inline-block bg-green-100 dark:bg-[#808080] dark:text-white text-green-600 text-xs font-medium px-2 py-1 mb-2">Just In</span>
-
-
-            <p class="text-2xl font-bold mb-4 dark:text-[#808080]">$349</p>
-            <p class="dark:text-[#808080] mb-4 font-semibold">Shoes Info</p>
-            <p class="mb-4 text-sm dark:text-[#808080]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit commodi rerum reprehenderit
-                dolore modi at ratione iusto doloremque vero explicabo, iste nisi sapiente necessitatibus ipsum
-                molestiae libero eligendi autem?</p>
-            <!-- Color and Size -->
-            <div class="flex gap-4 mb-4">
-                <div class="w-full">
-                    <label class="block text-sm font-medium mb-1 dark:text-[#808080]">Color</label>
-                    <select class="border bg-transparent py-3 px-4 w-full dark:text-[#808080]">
-                        <option>Black</option>
-                    </select>
+    <section class="my-5 py-2 px-4">
+        <div class="flex items-center justify-between">
+            <p class="text-sm dark:text-[#808080]">Cart</p>
+            <div class="filter-actions flex gap-x-[40px]">
+                <div class="flex items-center justify-between gap-2 cursor-pointer" id="sideBarFilter">
+                    <span class="dark:text-[#808080]"><i data-lucide="shopping-basket" class="w-5 h-5"></i></span>
+                    <p class="text-sm dark:text-[#808080]">Clear Cart</p>
                 </div>
-                <div class="w-full">
-                    <label class="block text-sm font-medium mb-1 dark:text-[#808080]">Size</label>
-                    <select class="border bg-transparent py-3 px-4 w-full dark:text-[#808080]">
-                        <option>8</option>
-                    </select>
-                </div>
+
             </div>
-
-            <!-- Add to Cart Button -->
-            <button class="w-full bg-black dark:bg-white dark:text-black text-white py-3 hover:opacity-90 mb-4" onclick="window.location.href='cart.html'">Add To Cart</button>
-
-
-            <!-- Description -->
-            <details class="border p-4">
-                <summary class="cursor-pointer font-medium dark:text-[#808080]">Descriptions</summary>
-                <p class="text-sm text-gray-600 mt-2 dark:text-[#808080]">
-                    Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
-                </p>
-            </details>
         </div>
     </section>
 
-   
-    <section class="my-5 p-6">
+
+    <section>
         <div class="container">
-            <!-- Section Title -->
-            <h2 class="text-3xl my-5 text-[var(--color-black)] dark:text-[#808080]">Related Product</h2>
-            <!-- Grid -->
-            <div class="product relatedProduct overflow-hidden relative pb-8">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p1.png" alt="Dunk Mythsoe"
-                                class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Dunk Mythsoe</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$234</h2>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <!-- Cart Items -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Item 1 -->
+                    <div class="flex items-center gap-4 border-b pb-4">
+                        <img src="assets/p2.png" alt="Product 1" class="w-20 h-20 rounded object-cover" />
+                        <div class="flex-1">
+                            <h3 class="font-semibold dark:text-[#808080]">Raw Black T-Shirt Lineup</h3>
+                            <p class="text-sm text-gray-500">Color: White — Size: 8</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-medium dark:text-[#808080]">$75.00</span>
+                            <div class="flex items-center border">
+                                <button class="px-2 text-xl py-1 dark:text-[#808080]">−</button>
+                                <span class="px-2 dark:text-[#808080]">1</span>
+                                <button class="px-2 text-xl py-1 dark:text-[#808080]">+</button>
                             </div>
+                            <button class="text-gray-500 hover:text-red-600 text-xl px-2">
+                                <i data-lucide="trash" class="w-5 h-5"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Field Gee" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Field Gee</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex items-center gap-4">
+                        <img src="assets/p1.png" alt="Product 2" class="w-20 h-20 rounded object-cover" />
+                        <div class="flex-1">
+                            <h3 class="font-semibold dark:text-[#808080]">Essential Neutrals</h3>
+                            <p class="text-sm text-gray-500">Color: Brown — Size: M</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
+                        <div class="flex items-center gap-2">
+                            <span class="font-medium dark:text-[#808080]">$22.00</span>
+                             <div class="flex items-center border">
+                                <button class="px-2 text-xl py-1 dark:text-[#808080]">−</button>
+                                <span class="px-2 dark:text-[#808080]">1</span>
+                                <button class="px-2 text-xl py-1 dark:text-[#808080]">+</button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
+                            <button class="text-gray-500 hover:text-red-600 text-xl px-2">
+                                <i data-lucide="trash" class="w-5 h-5"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-prev rounded-full relatedProduct bg-white dark:bg-[#1B1B1B]">
-                    <i data-lucide="chevron-left" class="w-6 h-6 text-black dark:text-white"></i>
-                  </div>
-                  
-                  <div class="swiper-button-next rounded-full relatedProduct bg-white dark:bg-[#1B1B1B]">
-                    <i data-lucide="chevron-right" class="w-6 h-6 text-black dark:text-white"></i>
-                  </div>
-            </div>
 
+                <!-- Order Summary -->
+                <div class="border p-6 shadow-sm h-fit">
+                    <h2 class="text-lg font-semibold mb-4 dark:text-[#808080]">Order Summary</h2>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Subtotal</span>
+                            <span>$90.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Tax</span>
+                            <span>$3.00</span>
+                        </div>
+                        <hr class="my-2" />
+                        <div class="flex justify-between font-semibold text-black dark:text-[#808080]">
+                            <span>Total</span>
+                            <span>$100.00</span>
+                        </div>
+                    </div>
+                    <button class="w-full mt-4 bg-black text-white py-2 hover:bg-black/70">Checkout</button>
+                    <button class="w-full mt-2 text-sm text-gray-500 hover:underline">Continue Shopping</button>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section class="px-6 py-10">
-        <h2 class="text-lg font-semibold mb-6 dark:text-[#808080]">Latest reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            <!-- Review Card -->
-            <div class="border p-4 shadow-sm">
-                <div class="flex items-center mb-2 text-yellow-500">
-                    ★★★★☆
-                </div>
-                <h3 class="text-md font-semibold dark:text-[#808080]">High Quality</h3>
-                <p class="text-sm text-gray-600 mb-4">Got With nice Product</p>
-                <div class="flex items-center gap-2">
-                    <img src="https://i.pravatar.cc/32?img=1" alt="Avatar" class="w-8 h-8 rounded-full" />
-                    <div>
-                        <p class="text-sm font-medium dark:text-[#808080]">Rashi Sharma</p>
-                        <p class="text-xs text-gray-500">13 June, 2025</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Repeat for other reviews -->
-            <div class="border  p-4 shadow-sm">
-                <div class="flex items-center mb-2 text-yellow-500">
-                    ★★★★☆
-                </div>
-                <h3 class="text-md font-semibold dark:text-[#808080]">Review title</h3>
-                <p class="text-sm text-gray-600 mb-4">Review body</p>
-                <div class="flex items-center gap-2">
-                    <img src="https://i.pravatar.cc/32?img=2" alt="Avatar" class="w-8 h-8 rounded-full" />
-                    <div>
-                        <p class="text-sm font-medium dark:text-[#808080]">Reviewer name</p>
-                        <p class="text-xs text-gray-500">Date</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="border  p-4 shadow-sm">
-                <div class="flex items-center mb-2 text-yellow-500">
-                    ★★★★☆
-                </div>
-                <h3 class="text-md font-semibold dark:text-[#808080]">Review title</h3>
-                <p class="text-sm text-gray-600 mb-4">Review body</p>
-                <div class="flex items-center gap-2">
-                    <img src="https://i.pravatar.cc/32?img=3" alt="Avatar" class="w-8 h-8 rounded-full" />
-                    <div>
-                        <p class="text-sm font-medium dark:text-[#808080]">Reviewer name</p>
-                        <p class="text-xs text-gray-500">Date</p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -353,6 +259,9 @@
         </div>
 
     </section>
+
+
+
 
 
     <footer class="pt-16">

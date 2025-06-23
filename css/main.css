@@ -102,9 +102,6 @@ line-height: 100%;
   width: 30px;
   height: 30px;
   justify-content: center;
-  padding: 0.5rem;
-  background-color: white;
-  border-radius: 9999px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: background-color 0.2s ease;
 }
