@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-[var(--color-white)] dark:bg-[#1A1A1A] relative" id="shop-details">
+<body class="bg-[var(--color-white)] dark:bg-[#1A1A1A] relative">
     <div
         class="loader hidden items-center justify-center z-50 bg-white dark:bg-[#1A1A1A] w-full h-screen fixed top-0 left-0 bottom-0 overflow-hidden">
         <h1 class="loader-text dark:text-white md:text-6xl text-2xl">MYTHSOE</h1>
@@ -94,222 +94,173 @@
         </div>
     </header>
 
-    <section id="navigation-link" class="bg-[var(--color-light)] py-2 px-4 dark:bg-[var(--color-dark)]">
-        <div class="container">
-            <div class="navigation-box">
-                <ul class="flex items-center justify-between">
-                    <li class="dark:text-[#808080]"><a href="#"><i data-lucide="chevron-left" class="w-5 h-5"></i></a>
-                    </li>
-                    <li class="dark:text-[#808080]">
-                        Dunk Mythsoe</li>
-                    <li class="dark:text-[#808080]"><a href="#"><i data-lucide="chevron-right" class="w-5 h-5"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
+     <!-- Main Layout -->
+     <section class="dark:bg-[#1a1a1a] bg-[var(--color-light)]">
+        <div class="px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6 container">
+            <div class="lg:col-span-2 space-y-6">
+              <!-- Billing Info -->
+              <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
+                <h2 class="font-semibold text-lg mb-2 dark:text-[#808080]">Billing Info</h2>
+                <p class="text-gray-500 mb-4">Please Enter your billing info</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input type="text" placeholder="Your name" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                  <input type="text" placeholder="Phone number" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                  <input type="text" placeholder="Address" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                  <input type="text" placeholder="Town or city" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                </div>
+              </div>
+      
+              <!-- Pickup Info -->
+              <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
+                <h2 class="font-semibold text-lg mb-2 dark:text-[#808080] ">Pickup From Store</h2>
+                <p class="text-gray-500 mb-4">Please select your Pickup date</p>
+      
+                <!-- Pick-Up -->
+                <div class="mb-4">
+                  <label class="flex items-center space-x-2">
+                    <input type="radio" name="method" checked />
+                    <span class="dark:text-[#808080]">Pick - Up</span>
 
-    <section class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <!-- Product Image -->
-        <div class="relative">
-            <img src="assets/p1.png" alt="Shoe" class="rounded-lg w-full h-[500px] object-cover" />
-            <button class="absolute top-2 left-2 bg-white dark:bg-black p-2 rounded-full shadow">
-                <i data-lucide="heart" class="w-5 h-5 text-black dark:text-[#808080]"></i>
-            </button>
-        </div>
-
-        <!-- Product Info -->
-        <div>
-            <h1 class="text-xl font-semibold mb-2 dark:text-[#808080]">Dunk Mythsoe</h1>
-            <span class="inline-block bg-green-100 dark:bg-[#808080] dark:text-white text-green-600 text-xs font-medium px-2 py-1 mb-2">Just In</span>
-
-
-            <p class="text-2xl font-bold mb-4 dark:text-[#808080]">$349</p>
-            <p class="dark:text-[#808080] mb-4 font-semibold">Shoes Info</p>
-            <p class="mb-4 text-sm dark:text-[#808080]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit commodi rerum reprehenderit
-                dolore modi at ratione iusto doloremque vero explicabo, iste nisi sapiente necessitatibus ipsum
-                molestiae libero eligendi autem?</p>
-            <!-- Color and Size -->
-            <div class="flex gap-4 mb-4">
-                <div class="w-full">
-                    <label class="block text-sm font-medium mb-1 dark:text-[#808080]">Color</label>
-                    <select class="border bg-transparent py-3 px-4 w-full dark:text-[#808080]">
-                        <option>Black</option>
+                  </label>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                    <select class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
+                      <option>Select your city</option>
                     </select>
-                </div>
-                <div class="w-full">
-                    <label class="block text-sm font-medium mb-1 dark:text-[#808080]">Size</label>
-                    <select class="border bg-transparent py-3 px-4 w-full dark:text-[#808080]">
-                        <option>8</option>
+                    <select class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
+                      <option>Select your date</option>
                     </select>
-                </div>
-            </div>
-
-            <!-- Add to Cart Button -->
-            <button class="w-full bg-black dark:bg-white dark:text-black text-white py-3 hover:opacity-90 mb-4" onclick="window.location.href='cart.html'">Add To Cart</button>
-
-
-            <!-- Description -->
-            <details class="border p-4">
-                <summary class="cursor-pointer font-medium dark:text-[#808080]">Descriptions</summary>
-                <p class="text-sm text-gray-600 mt-2 dark:text-[#808080]">
-                    Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
-                </p>
-            </details>
-        </div>
-    </section>
-
-   
-    <section class="my-5 p-6">
-        <div class="container">
-            <!-- Section Title -->
-            <h2 class="text-3xl my-5 text-[var(--color-black)] dark:text-[#808080]">Related Product</h2>
-            <!-- Grid -->
-            <div class="product relatedProduct overflow-hidden relative pb-8">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p1.png" alt="Dunk Mythsoe"
-                                class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Dunk Mythsoe</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$234</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Field Gee" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Field Gee</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-prev rounded-full relatedProduct bg-white dark:bg-[#1B1B1B]">
-                    <i data-lucide="chevron-left" class="w-6 h-6 text-black dark:text-white"></i>
+                    <select class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
+                      <option>Select your time</option>
+                    </select>
+                    <select class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
+                      <option>Select your date</option>
+                    </select>
                   </div>
-                  
-                  <div class="swiper-button-next rounded-full relatedProduct bg-white dark:bg-[#1B1B1B]">
-                    <i data-lucide="chevron-right" class="w-6 h-6 text-black dark:text-white"></i>
+                </div>
+      
+                <!-- Drop-Off -->
+                <div>
+                  <label class="flex items-center space-x-2">
+                    <input type="radio" name="method" />
+                    <span class="dark:text-[#808080]">Drop - Off</span>
+                  </label>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                    <select class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
+                      <option>Select your city</option>
+                    </select>
+                    <select class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
+                      <option>Select your time</option>
+                    </select>
                   </div>
+                </div>
+              </div>
+      
+              <!-- Payment Method -->
+              <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
+                <h2 class="font-semibold text-lg mb-2 dark:text-[#808080] ">Payment Method</h2>
+                <p class="text-gray-500 mb-4">Please enter your payment method</p>
+      
+                <!-- Credit Card -->
+                <div class="space-y-4 border p-4 rounded mb-4">
+                  <label class="flex items-center space-x-2">
+                    <input type="radio" name="payment" checked />
+                    <span class="dark:text-[#808080]">Credit Card</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" class="h-4" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" class="h-4" />
+                  </label>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Card number" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                    <input type="text" placeholder="DD / MM / YY" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                    <input type="text" placeholder="Card holder" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                    <input type="text" placeholder="CVC" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                  </div>
+                </div>
+      
+                <!-- PayPal -->
+                <div class="flex items-center space-x-2">
+                  <input type="radio" name="payment" />
+                  <span class="dark:text-[#808080]">PayPal</span>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-4" />
+                </div>
+              </div>
+      
+              <!-- Confirmation -->
+              <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
+                <h2 class="font-semibold text-lg mb-2 dark:text-[#808080] ">Confirmation</h2>
+                <p class="text-gray-500 mb-4">We are getting to the end. Just few clicks and your rental is ready!</p>
+                <div class="space-y-2 mb-4">
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" />
+                    <span class="dark:text-[#808080] text-sm">I agree with sending Marketing and newsletter emails. No spam, promised!</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" />
+                    <span class="dark:text-[#808080] text-sm">I agree with our terms and conditions and privacy policy.</span>
+                  </label>
+                </div>
+               <div class="flex justify-between">
+                   <p class="text-gray-500 mt-4 flex items-center gap-2">
+                       <i data-lucide="shield-check" class="w-5 h-5"></i>
+                     All your data are safe
+                   </p>
+                <button class="bg-black text-white px-6 py-3 w-[160px] text-sm">Pay Now</button>
+
+               </div>
+              </div>
             </div>
-
+      
+            <!-- Right Sidebar -->
+            <aside class="space-y-4">
+              <div class="bg-white p-4 rounded shadow dark:bg-[var(--color-dark)]">
+                <h2 class="font-semibold text-lg mb-2 dark:text-[#808080]">Order Summary</h2>
+                <p class="text-gray-500 text-xs mb-4">Prices may change depending on the store of the pickup and the price of your shoe store place.</p>
+                <div class="flex items-center space-x-4">
+                  <img src="assets/p2.png" alt="Shoe" class="w-16 h-16 object-cover rounded" />
+                  <div>
+                    <p class="font-semibold dark:text-[#808080]">Nissan GT - R</p>
+                    <p class="text-gray-500 text-sm">Size : 8</p>
+                  </div>
+                </div>
+                <div class="mt-4 space-y-2">
+                  <div class="flex justify-between text-gray-700"><span>Subtotal</span><span>$80.00</span></div>
+                  <div class="flex justify-between text-gray-700"><span>Tax</span><span>$0</span></div>
+                  <div class="flex">
+                    <input type="text" placeholder="Apply promo code" class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
+                    <button class="bg-[#808080] px-2 text-sm text-white w-[120px]">Apply now</button>
+                  </div>
+                  <div class="flex justify-between font-semibold text-lg mt-4 dark:text-[#808080]"><span>Total Price</span><span>$80.00</span></div>
+                </div>
+              </div>
+            </aside>
+            <!-- Left Section -->
         </div>
-    </section>
+      </section>
 
 
-    <section class="px-6 py-10">
-        <div class="container">
-            <h2 class="text-lg font-semibold mb-6 dark:text-[#808080]">Latest reviews</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    
-                <!-- Review Card -->
-                <div class="border p-4 shadow-sm">
-                    <div class="flex items-center mb-2 text-yellow-500">
-                        ★★★★☆
-                    </div>
-                    <h3 class="text-md font-semibold dark:text-[#808080]">High Quality</h3>
-                    <p class="text-sm text-gray-600 mb-4">Got With nice Product</p>
-                    <div class="flex items-center gap-2">
-                        <img src="https://i.pravatar.cc/32?img=1" alt="Avatar" class="w-8 h-8 rounded-full" />
-                        <div>
-                            <p class="text-sm font-medium dark:text-[#808080]">Rashi Sharma</p>
-                            <p class="text-xs text-gray-500">13 June, 2025</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Repeat for other reviews -->
-                <div class="border  p-4 shadow-sm">
-                    <div class="flex items-center mb-2 text-yellow-500">
-                        ★★★★☆
-                    </div>
-                    <h3 class="text-md font-semibold dark:text-[#808080]">Review title</h3>
-                    <p class="text-sm text-gray-600 mb-4">Review body</p>
-                    <div class="flex items-center gap-2">
-                        <img src="https://i.pravatar.cc/32?img=2" alt="Avatar" class="w-8 h-8 rounded-full" />
-                        <div>
-                            <p class="text-sm font-medium dark:text-[#808080]">Reviewer name</p>
-                            <p class="text-xs text-gray-500">Date</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="border  p-4 shadow-sm">
-                    <div class="flex items-center mb-2 text-yellow-500">
-                        ★★★★☆
-                    </div>
-                    <h3 class="text-md font-semibold dark:text-[#808080]">Review title</h3>
-                    <p class="text-sm text-gray-600 mb-4">Review body</p>
-                    <div class="flex items-center gap-2">
-                        <img src="https://i.pravatar.cc/32?img=3" alt="Avatar" class="w-8 h-8 rounded-full" />
-                        <div>
-                            <p class="text-sm font-medium dark:text-[#808080]">Reviewer name</p>
-                            <p class="text-xs text-gray-500">Date</p>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <section id="newsletter" class="py-16 bg-[var(--color-light)] py-10 dark:bg-[var(--color-dark)]">
@@ -486,6 +437,8 @@
         </div>
     </div>
 
+
+
     <!-- Cart Side Drawer -->
     <div id="cartDrawer"
         class="fixed top-0 right-0 w-[90%] sm:w-[400px] h-full bg-white dark:bg-[#0D0D0D] shadow-lg z-50 hidden">
@@ -536,12 +489,10 @@
                     <span>Subtotal</span>
                     <span class="font-semibold">$240</span>
                 </div>
-                <a href="cart.html"
-                    class="w-full block border text-center border-[#808080] text-black py-3 dark:border-[#808080] dark:text-[#808080] mb-3">
+                <a href="cart.html" class="w-full block border text-center border-[#808080] text-black py-3 dark:border-[#808080] dark:text-[#808080] mb-3">
                     Cart
                 </a>
-                <a href="checkout.html"
-                    class="w-full text-center block bg-black text-white py-3 dark:bg-white dark:text-black">
+                <a href="checkout.html" class="w-full text-center block bg-black text-white py-3 dark:bg-white dark:text-black">
                     Checkout
                 </a>
             </div>
