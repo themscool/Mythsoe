@@ -1,6 +1,27 @@
+const homeAnimation = document.body.id;
+if (homeAnimation === 'home') {
 // loading site js
 gsap.registerPlugin(ScrollTrigger);
+// animation text with scrolling
+const section = document.querySelector('.horizontal');
+const pinWrap = section.querySelector('.pin-wrap');
+const animWrap = pinWrap.querySelector('.animation-wrap');
 
+gsap.fromTo(animWrap, {
+  x: 0,
+}, {
+x: () => -(animWrap.scrollWidth - window.innerWidth),
+  ease: "none",
+  scrollTrigger: {
+    trigger: section,
+    start: "top bottom",
+    end: () => "+=" + (animWrap.scrollWidth - window.innerWidth),
+    scrub: 1.5,
+    // markers: true 
+  }
+});
+} 
+  
 // Loader animation
 const loaderText = document.querySelector(".loader-text");
 const text = loaderText.textContent;
@@ -89,21 +110,6 @@ gsap.to(".loader-text span", {
 });
 
 
-// animation text with scrolling
-const section = document.querySelector('section.horizontal');
-const pinWrap = section.querySelector('.pin-wrap');
-const animWrap = pinWrap.querySelector('.animation-wrap');
 
-gsap.fromTo(animWrap, {
-  x: 0,
-}, {
-x: () => -(animWrap.scrollWidth - window.innerWidth),
-  ease: "none",
-  scrollTrigger: {
-    trigger: section,
-    start: "top bottom",
-    end: () => "+=" + (animWrap.scrollWidth - window.innerWidth),
-    scrub: 1.5,
-    // markers: true 
-  }
-});
+
+

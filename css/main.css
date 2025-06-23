@@ -69,3 +69,32 @@ line-height: 100%;
 .swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
 	z-index: -1 !important;
 }
+
+/* shop filter css */
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-area {
+  overflow: hidden;
+  transition: all 0.02s ease;
+}
+
+.product-area {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-area > div {
+  transition: all 0.02s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
