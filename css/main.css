@@ -1,7 +1,7 @@
 :root {
   --title-font: "Oswald", sans-serif;
   --color-black: #000000;   
-  --color-dark: #4C4C4C;   
+  --color-dark: #242424;   
   --color-light: #F6F6F8;  
   --color-white: #FFFFFF; 
 }
@@ -61,7 +61,7 @@ font-weight: 600;
 }
 
 section.horizontal .item .item-text.stroke h2 {
--webkit-text-stroke: 1px var(--color-black);
+-webkit-text-stroke: 1px #4C4C4C;
 -webkit-text-fill-color: transparent;
 line-height: 100%;
 }

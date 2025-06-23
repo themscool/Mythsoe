@@ -16,7 +16,7 @@
 
 <body class="bg-[var(--color-white)] dark:bg-[#1A1A1A] relative">
     <div
-        class="loader flex items-center justify-center z-50 bg-[var(--color-white)] dark:bg-[#1A1A1A] w-full h-screen fixed top-0 left-0 bottom-0 overflow-hidden">
+        class="loader hidden items-center justify-center z-50 bg-white dark:bg-[#1A1A1A] w-full h-screen fixed top-0 left-0 bottom-0 overflow-hidden">
         <h1 class="loader-text dark:text-white md:text-6xl text-2xl">MYTHSOE</h1>
     </div>
 
@@ -141,11 +141,7 @@
 
 
             </div>
-
-
-
-            <!-- If you want pagination -->
-            <div class="swiper-pagination absolute bottom-3 right-3"></div>
+            <div class="swiper-pagination absolute bottom-3 right-3 z-[1]"></div>
         </div>
     </section>
 
@@ -170,7 +166,8 @@
                 </div>
                 <div class="item">
                     <div class="item-text">
-                        <h2>Men</h2>
+                        <h2 class="dark:text-white">Men</h2>
+
                     </div>
                 </div>
                 <div class="item">
@@ -190,7 +187,7 @@
                 </div>
                 <div class="item">
                     <div class="item-text">
-                        <h2>Women</h2>
+                        <h2 class="dark:text-white">Women</h2>
                     </div>
                 </div>
             </div>
@@ -201,8 +198,9 @@
     <section class="product-ad">
         <div class="container">
             <div class="max-w-5xl mx-auto text-center mt-4 mb-12">
-                <h1 class="text-7xl text-[var(--color-black)]">Look of speed</h1>
-                <h2 class="text-3xl my-2 text-[var(--color-black)]">Comfortable int the Spotlight</h2>
+                <h1 class="text-7xl text-[var(--color-black)] dark:text-[#808080]">Look of speed</h1>
+                <h2 class="text-3xl my-2 text-[var(--color-black)] dark:text-[#808080]">Comfortable int the Spotlight
+                </h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
                 <div class="relative group overflow-hidden shadow-md">
@@ -245,7 +243,7 @@
     <section class="my-5">
         <div class="container">
             <!-- Section Title -->
-            <h2 class="text-3xl my-5 text-[var(--color-black)]">Shop the Classics</h2>
+            <h2 class="text-3xl my-5 text-[var(--color-black)] dark:text-[#808080]">Shop the Classics</h2>
             <!-- Grid -->
             <div class="product productSlider overflow-hidden relative pb-8">
                 <div class="swiper-wrapper">
@@ -254,8 +252,8 @@
                             <img src="assets/p1.png" alt="Dunk Mythsoe"
                                 class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Dunk Mythsoe</h2>
-                                <h2 class="text-xl">$234</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Dunk Mythsoe</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$234</h2>
                             </div>
                         </div>
                     </div>
@@ -263,8 +261,8 @@
                         <div class="text-center">
                             <img src="assets/p2.png" alt="Field Gee" class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Field Gee</h2>
-                                <h2 class="text-xl">$364</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Field Gee</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
                             </div>
                         </div>
                     </div>
@@ -272,8 +270,8 @@
                         <div class="text-center">
                             <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Max W-12</h2>
-                                <h2 class="text-xl">$364</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
                             </div>
                         </div>
                     </div>
@@ -281,8 +279,8 @@
                         <div class="text-center">
                             <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Max W-12</h2>
-                                <h2 class="text-xl">$364</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
                             </div>
                         </div>
                     </div>
@@ -290,8 +288,8 @@
                         <div class="text-center">
                             <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Max W-12</h2>
-                                <h2 class="text-xl">$364</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
                             </div>
                         </div>
                     </div>
@@ -299,8 +297,8 @@
                         <div class="text-center">
                             <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Max W-12</h2>
-                                <h2 class="text-xl">$364</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
                             </div>
                         </div>
                     </div>
@@ -308,8 +306,8 @@
                         <div class="text-center">
                             <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Max W-12</h2>
-                                <h2 class="text-xl">$364</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
                             </div>
                         </div>
                     </div>
@@ -317,8 +315,8 @@
                         <div class="text-center">
                             <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
                             <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl">Max W-12</h2>
-                                <h2 class="text-xl">$364</h2>
+                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
+                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
                             </div>
                         </div>
                     </div>
@@ -335,28 +333,87 @@
 
     <!-- About soes -->
 
-    <section class="bg-[var(--color-light)] py-10">
+    <section class="bg-[var(--color-light)] py-10 dark:bg-[var(--color-dark)]">
         <div class="container">
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div>
                     <div class="brand-logo">
-                        <img src="assets/logo.png" class="w-[100px]" alt="">
+                        <img src="assets/logo.png" class="w-[100px] dark:invert" alt="">
                     </div>
                     <div class="my-4">
-                        <h2 class="text-6xl bold uppercase">Become part Be</h2>
-                        <h2 class="text-6xl flex flex-wrap max-w-1/2 items-center justify-start uppercase bold">the first <span class="block text-[var(--color-black)] capitalize text-xs w-[150px] p-2 mt-2">
-                            Only the absolute pioneers who sign up for our newsletter
-                        </span>     </h2>
-                        <h2 class="text-6xl bold uppercase">  of our Adventure</h2>
+                        <h2 class="text-6xl bold uppercase dark:text-[#808080]">Become part Be</h2>
+                        <h2
+                            class="text-6xl flex flex-wrap max-w-1/2 items-center justify-start uppercase bold dark:text-[#808080]">
+                            the first <span
+                                class="block text-[var(--color-black)]  dark:text-[#808080] capitalize text-xs w-[150px] p-2 mt-2">
+                                Only the absolute pioneers who sign up for our newsletter
+                            </span> </h2>
+                        <h2 class="text-6xl bold uppercase dark:text-[#808080]"> of our Adventure</h2>
+
                     </div>
                     <div class="mt-10"><a href="shop.html"
-                        class="bg-white/20 dark:bg-black/60 dark:text-white backdrop-blur-[3px]  text-white font-medium px-6 py-3 rounded-full">Explore
-                        More</a></div>
+                            class="bg-[#000] dark:bg-[#808080] dark:text-white backdrop-blur-[3px]  text-white font-medium px-6 py-3 rounded-full">Explore
+                            More</a></div>
                 </div>
-                <div>
+                <div class="hidden lg:block relative py-16">
+                    <!-- Shoe Image -->
+                    <img src="assets/product.png" alt="Shoe" class="w-auto h-[250px] z-10" />
 
+                    <!-- Annotation Bottom Right -->
+                    <div class="absolute bottom-[10px] right-[10px] w-64 text-xs leading-relaxed">
+                        <div
+                            class="absolute w-px h-[160px] bg-black dark:bg-white left-[-100px] bottom-[20px] rotate-[-75deg]">
+                        </div>
+                        <div
+                            class="w-[7px] h-[7px] bg-black dark:bg-white left-[-25px] top-[15px] rounded-full absolute">
+                        </div>
+                        <div
+                            class="w-[18px] h-[18px] bg-black/50 dark:bg-white left-[-180px] bottom-[111px] rounded-full absolute flex items-center justify-center">
+                            <div class="w-[10px] h-[10px] bg-black dark:bg-black/40 rounded-full"></div>
+                        </div>
+                        <p class="dark:text-[#808080]">
+                            Only the absolute pioneers who sign up for our newsletter get a front row seat, because at
+                            BrewDistrict24 we cherish those who embrace this adventure with us from the very beginning.
+                        </p>
+                    </div>
+
+                    <!-- Annotation Bottom Left -->
+                    <div class="absolute bottom-[30px] left-[-170px] w-64 text-xs leading-relaxed">
+                        <div
+                            class="absolute w-px h-[130px] bg-black dark:bg-white left-full bottom-[90px] rotate-[45deg]">
+                        </div>
+                        <div
+                            class="w-[7px] h-[7px] bg-black dark:bg-white right-[42px] top-[-15px] rounded-full absolute">
+                        </div>
+                        <div
+                            class="w-[18px] h-[18px] bg-black/50 dark:bg-white right-[-60px] top-[-118px] rounded-full absolute flex items-center justify-center">
+                            <div class="w-[10px] h-[10px] bg-black dark:bg-black/40 rounded-full"></div>
+                        </div>
+                        <p class="dark:text-[#808080]">
+                            Only the absolute pioneers who sign up for our newsletter get a front row seat, because at
+                            BrewDistrict24 we cherish those who embrace this adventure with us from the very beginning.
+                        </p>
+                    </div>
+
+                    <!-- Annotation Top Left on Shoe -->
+                    <div class="absolute top-[50px] right-[50px] w-64 text-xs leading-relaxed">
+                        <div class="absolute w-px h-[150px] bg-black dark:bg-white left-[-50px] top-2 rotate-[55deg]">
+                        </div>
+                        <div class="w-[7px] h-[7px] bg-black dark:bg-white left-[8px] top-[37px] rounded-full absolute">
+                        </div>
+                        <div
+                            class="w-[18px] h-[18px] bg-black/50 dark:bg-white left-[-120px] top-[118px] rounded-full absolute flex items-center justify-center">
+                            <div class="w-[10px] h-[10px] bg-black dark:bg-black/40 rounded-full"></div>
+                        </div>
+                        <p class="dark:text-[#808080]">
+                            Only the absolute pioneers who sign up for our newsletter get a front row seat, because at
+                            BrewDistrict24 we cherish those who embrace this adventure with us from the very beginning.
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="max-w-5xl mx-auto border-dashed border-b mt-8 border-black dark:border-[#808080]"></div>
+            <div class="max-w-5xl mx-auto border-b mt-2 border-black dark:border-[#808080]"></div>
         </div>
     </section>
 
@@ -395,11 +452,11 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Brand -->
                 <div>
-                 <img src="assets/logo.png" class="w-[150px] dark:invert" alt="">
+                    <img src="assets/logo.png" class="w-[150px] dark:invert" alt="">
 
 
                 </div>
-                
+
                 <!-- About -->
                 <div>
                     <h5 class="font-semibold text-gray-7000 dark:text-[#808080] mb-4">About</h5>
@@ -410,7 +467,7 @@
                         <li><a href="#" class="hover:text-gray-7000 dark:text-[#808080]">Business Partner</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Community -->
                 <div>
                     <h5 class="font-semibold text-gray-7000 dark:text-[#808080] mb-4">Community</h5>
@@ -421,7 +478,7 @@
                         <li><a href="#" class="hover:text-gray-7000 dark:text-[#808080]">Contact Us</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Socials -->
                 <div>
                     <h5 class="font-semibold text-gray-7000 dark:text-[#808080] mb-4">Socials</h5>
@@ -433,9 +490,11 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-200 mt-12 py-5 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-600">© <script>document.write(new Date().getFullYear())</script> Mythsoe. All rights reserved</p>
+
+            <div class="border-t border-[#808080] mt-12 py-5 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600">©
+                    <script>document.write(new Date().getFullYear())</script> Mythsoe. All rights reserved
+                </p>
                 <div class="flex items-center space-x-4 mt-4 md:mt-0">
                     <span class="text-gray-600">Privacy & Policy</span>
                     <span class="text-gray-600">Terms & Conditions</span>
