@@ -90,7 +90,29 @@ line-height: 100%;
   transition: all 0.02s ease-in-out;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important;
+}
 
+.swiper-button-prev.relatedProduct,
+.swiper-button-next.relatedProduct {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.swiper-button-prev.relatedProduct:hover,
+.swiper-button-next.relatedProduct:hover {
+  background-color: #f3f4f6;
+}
 
 
 
