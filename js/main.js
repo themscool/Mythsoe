@@ -162,10 +162,52 @@ const heroSlider = new Swiper('.heroSlider', {
     },
   });
 
+// tabs
 
+const tabItems = document.querySelectorAll('.tab-item');
+const tabPanes = document.querySelectorAll('.tab-pane');
 
+function clearActive() {
+  tabItems.forEach(item => {
+    item.classList.remove('text-[#808080]');
+    item.classList.add('text-black', 'dark:text-white');
+    gsap.to(item, { scale: 1, duration: 0.3, ease: "power2.out" }); // Reset scale
+  });
 
+  tabPanes.forEach(pane => {
+    pane.classList.add('hidden');
+  });
+}
 
+tabItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const tabIndex = item.getAttribute('data-tab');
+    const targetPane = document.querySelector(`.tab-pane[data-pane="${tabIndex}"]`);
+
+    clearActive();
+
+    item.classList.remove('text-black', 'dark:text-white');
+    item.classList.add('text-[#808080]');
+
+    // Animate tab heading
+    gsap.fromTo(item, 
+      { scale: 0.9 }, 
+      { scale: 1.05, duration: 0.2, ease: "power1.out", onComplete: () => {
+          gsap.to(item, { scale: 1, duration: 0.2, ease: "bounce.out" });
+      }}
+    );
+
+    // Animate content
+    targetPane.classList.remove('hidden');
+    gsap.fromTo(targetPane, 
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }
+    );
+  });
+});
+
+// Set default active tab
+tabItems[0].click();
 
 
 

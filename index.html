@@ -414,8 +414,111 @@
             </div>
             <div class="max-w-5xl mx-auto border-dashed border-b mt-8 border-black dark:border-[#808080]"></div>
             <div class="max-w-5xl mx-auto border-b mt-2 border-black dark:border-[#808080]"></div>
+
+            <!-- Tabs -->
+            <div class="max-w-4xl mx-auto">
+                <div class="tab-box my-4 flex items-center flex-col">
+                    <div class="tab-about flex gap-x-4 lg:gap-x-[40px]">
+                        <div class="tab-item cursor-pointer text-black dark:text-white" data-tab="0">
+                            <h2 class="uppercase text-xl">Style</h2>
+                        </div>
+                        <div class="tab-item cursor-pointer text-black dark:text-white" data-tab="1">
+                            <h2 class="uppercase text-xl">Comfort</h2>
+                        </div>
+                        <div class="tab-item cursor-pointer text-black dark:text-white" data-tab="2">
+                            <h2 class="uppercase text-xl">Design</h2>
+                        </div>
+                        <div class="tab-item cursor-pointer text-black dark:text-white" data-tab="3">
+                            <h2 class="uppercase text-xl">Performance</h2>
+                        </div>
+                    </div>
+
+                    <div class="tab-content mt-6">
+                        <div class="tab-pane hidden text-center" data-pane="0">
+                            <h2 class="text-xl font-medium dark:text-white">Step Into Style & Comfort</h2>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                                <div class="max-w-5xl mx-auto border-b mt-5 border-black dark:border-[#808080]"></div>
+                        </div>
+                        <div class="tab-pane hidden text-center" data-pane="1">
+                            <h2 class="text-xl font-medium dark:text-white">Step Into Comfortable</h2>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                                <div class="max-w-5xl mx-auto border-b mt-5 border-black dark:border-[#808080]"></div>
+                        </div>
+                        <div class="tab-pane hidden text-center" data-pane="2">
+                            <h2 class="text-xl font-medium dark:text-white">Step Into Design</h2>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                                <div class="max-w-5xl mx-auto border-b mt-5 border-black dark:border-[#808080]"></div>
+                        </div>
+                        <div class="tab-pane hidden text-center" data-pane="3">
+                            <h2 class="text-xl font-medium dark:text-white">Step Into Performance</h2>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                            <p class="dark:text-white text-sm my-3">Connect to a world that is packed with taste. From England to India, all the way up to
+                                the American tropics, where its bold flavours originate. Who needs coco rum when you can
+                                grab a beer like this?</p>
+                                <div class="max-w-5xl mx-auto border-b mt-5 border-black dark:border-[#808080]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <section class="flex flex-col md:flex-row justify-between items-start md:items-center px-8 py-16 max-w-7xl mx-auto bg-[var(--color-light)] py-10 dark:bg-[var(--color-dark)]">
+    
+        <!-- Left Text -->
+        <div class="md:w-1/2 space-y-4">
+          <h1 class="text-5xl font-extrabold dark:text-[#808080]">News Letter</h1>
+
+          <h2 class="text-xl font-semibold dark:text-[#808080]">Become part be the first of our soul</h2>
+          <p class="text-sm max-w-md dark:text-[#808080]">
+            Only the absolute pioneers who sign up for our newsletter get a front row seat, because at <span class="font-semibold">@imithlesharya</span> we cherish those who embrace this adventure with us from the very beginning.
+          </p>
+        </div>
+    
+        <!-- Right Input Field -->
+        <div class="md:w-1/2 mt-10 md:mt-0 flex flex-col items-start md:items-end space-y-4">
+          <form class="flex items-center w-full md:w-auto">
+            <div class="relative w-full md:w-80">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                <i data-lucide="search" class="w-5 h-5 text-gray-400"></i>
+              </span>
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-full pl-10 pr-4 py-2 rounded-full border border-[#808080] bg-transparent focus:outline-none "
+              />
+            </div>
+            <button
+              type="submit"
+              class="ml-4 px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded-full hover:bg-black/80 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p class="text-xs dark:text-[#808080] max-w-sm text-left md:text-right">
+            Only the absolute pioneers who sign up for our newsletter get a front row seat, because at <span class="font-semibold">@imithlesharya</span> we cherish those who embrace this adventure with us from the very beginning.
+          </p>
+        </div>
+    
+      </section>
 
 
 
@@ -453,7 +556,6 @@
                 <!-- Brand -->
                 <div>
                     <img src="assets/logo.png" class="w-[150px] dark:invert" alt="">
-
 
                 </div>
 

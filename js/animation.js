@@ -70,19 +70,19 @@ gsap.to(".loader-text span", {
           opacity: 0,
           stagger: 0.1,
           ease: "power2.out"
-        }),
-
-        gsap.from (".product-ad h1,h2", {
-          scrollTrigger: {
-            trigger: ".product-ad",
-            start: "top 85%",
-          },
-          duration: 1.5,
-          y: -30,
-          opacity: 0,
-          stagger: 0.1,
-          ease: "power2.out"
         })
+
+        // gsap.from (".product-ad h1,h2", {
+        //   scrollTrigger: {
+        //     trigger: ".product-ad",
+        //     start: "top 85%",
+        //   },
+        //   duration: 1.5,
+        //   y: -30,
+        //   opacity: 0,
+        //   stagger: 0.1,
+        //   ease: "power2.out"
+        // })
       }
     });
   }
