@@ -110,54 +110,9 @@
     </section>
 
 
-    <section class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <!-- Product Image -->
-        <div class="relative">
-            <img src="assets/p1.png" alt="Shoe" class="rounded-lg w-full h-[500px] object-cover" />
-            <button class="absolute top-2 left-2 bg-white dark:bg-black p-2 rounded-full shadow">
-                <i data-lucide="heart" class="w-5 h-5 text-black dark:text-[#808080]"></i>
-            </button>
-        </div>
-
-        <!-- Product Info -->
-        <div>
-            <h1 class="text-xl font-semibold mb-2 dark:text-[#808080]">Dunk Mythsoe</h1>
-            <span class="inline-block bg-green-100 dark:bg-[#808080] dark:text-white text-green-600 text-xs font-medium px-2 py-1 mb-2">Just In</span>
-
-
-            <p class="text-2xl font-bold mb-4 dark:text-[#808080]">$349</p>
-            <p class="dark:text-[#808080] mb-4 font-semibold">Shoes Info</p>
-            <p class="mb-4 text-sm dark:text-[#808080]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit commodi rerum reprehenderit
-                dolore modi at ratione iusto doloremque vero explicabo, iste nisi sapiente necessitatibus ipsum
-                molestiae libero eligendi autem?</p>
-            <!-- Color and Size -->
-            <div class="flex gap-4 mb-4">
-                <div class="w-full">
-                    <label class="block text-sm font-medium mb-1 dark:text-[#808080]">Color</label>
-                    <select class="border bg-transparent py-3 px-4 w-full dark:text-[#808080]">
-                        <option>Black</option>
-                    </select>
-                </div>
-                <div class="w-full">
-                    <label class="block text-sm font-medium mb-1 dark:text-[#808080]">Size</label>
-                    <select class="border bg-transparent py-3 px-4 w-full dark:text-[#808080]">
-                        <option>8</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Add to Cart Button -->
-            <button class="w-full bg-black dark:bg-white dark:text-black text-white py-3 hover:opacity-90 mb-4" onclick="window.location.href='cart.html'">Add To Cart</button>
-
-
-            <!-- Description -->
-            <details class="border p-4">
-                <summary class="cursor-pointer font-medium dark:text-[#808080]">Descriptions</summary>
-                <p class="text-sm text-gray-600 mt-2 dark:text-[#808080]">
-                    Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
-                </p>
-            </details>
-        </div>
+    <section class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start" id="product-details">
+        <!-- dynamic data from ecm file -->
+     
     </section>
 
    
@@ -167,80 +122,8 @@
             <h2 class="text-3xl my-5 text-[var(--color-black)] dark:text-[#808080]">Related Product</h2>
             <!-- Grid -->
             <div class="product relatedProduct overflow-hidden relative pb-8">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p1.png" alt="Dunk Mythsoe"
-                                class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Dunk Mythsoe</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$234</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Field Gee" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Field Gee</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="text-center">
-                            <img src="assets/p2.png" alt="Max W-12" class="mx-auto w-full mb-4 h-[400px] object-cover">
-                            <div class="flex justify-between text-sm border-t pt-2">
-                                <h2 class="text-xl dark:text-[#808080]">Max W-12</h2>
-                                <h2 class="text-xl dark:text-[#808080]">$364</h2>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-wrapper" id="relatedProduct">
+                   <!-- dynamic data from ecm -->
                 </div>
                 <div class="w-[30px] h-[30px] p-2 swiper-button-prev rounded-full relatedProduct bg-[var(--color-white)] dark:bg-[#1B1B1B]">
                     <i data-lucide="chevron-left" class="w-[10px] h-[10px] text-black dark:text-white"></i>
@@ -554,6 +437,7 @@
         class="darkmod w-[30px] h-[30px] flex items-center justify-center fixed bottom-3 left-2 cursor-pointer bg-gray-600 text-white rounded-full p-[20px] z-10">
         <span class="text-[var(--color-light)]"><i data-lucide="sun"></i></span>
     </div>
+     <script type="module" src="js/ecm.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="js/icons/lucide.js"></script>
     <!-- swiper Slider -->
