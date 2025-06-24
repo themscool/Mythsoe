@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-[var(--color-white)] dark:bg-[#1A1A1A] relative" id="checkout">
+<body class="bg-[var(--color-white)] dark:bg-[#1A1A1A] relative" id="failed">
     <div
         class="loader flex items-center justify-center z-50 bg-white dark:bg-[#1A1A1A] w-full h-screen fixed top-0 left-0 bottom-0 overflow-hidden">
         <h1 class="loader-text dark:text-white md:text-6xl text-2xl">MYTHSOE</h1>
@@ -94,247 +94,48 @@
         </div>
     </header>
 
-
-    <!-- Main Layout -->
-    <section class="dark:bg-[#1a1a1a] bg-[var(--color-light)]">
-        <div class="px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6 container">
-            <div class="lg:col-span-2 space-y-6">
-                <!-- Billing Info -->
-                <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
-                    <h2 class="font-semibold text-lg mb-2 dark:text-[#808080]">Billing Info</h2>
-                    <p class="text-gray-500 mb-4">Please Enter your billing info</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input type="text" placeholder="Your name"
-                            class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                        <input type="text" placeholder="Phone number"
-                            class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                        <input type="text" placeholder="Address"
-                            class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                        <input type="text" placeholder="Town or city"
-                            class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                    </div>
-                </div>
-
-                <!-- Pickup Info -->
-                <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
-                    <h2 class="font-semibold text-lg mb-2 dark:text-[#808080] ">Pickup From Store</h2>
-                    <p class="text-gray-500 mb-4">Please select your Pickup date</p>
-
-                    <!-- Pick-Up -->
-                    <div class="mb-4">
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="method" checked />
-                            <span class="dark:text-[#808080]">Pick - Up</span>
-
-                        </label>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                            <select
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
-                                <option>Select your city</option>
-                            </select>
-                            <select
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
-                                <option>Select your date</option>
-                            </select>
-                            <select
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
-                                <option>Select your time</option>
-                            </select>
-                            <select
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
-                                <option>Select your date</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Drop-Off -->
-                    <div>
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="method" />
-                            <span class="dark:text-[#808080]">Drop - Off</span>
-                        </label>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                            <select
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
-                                <option>Select your city</option>
-                            </select>
-                            <select
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none">
-                                <option>Select your time</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Payment Method -->
-                <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
-                    <h2 class="font-semibold text-lg mb-2 dark:text-[#808080] ">Payment Method</h2>
-                    <p class="text-gray-500 mb-4">Please enter your payment method</p>
-
-                    <!-- Credit Card -->
-                    <div class="space-y-4 border p-4 mb-4">
-                        <div class="flex justify-between">
-                            <label class="flex items-center space-x-2">
-                                <input type="radio" name="payment" checked />
-                                <span class="dark:text-[#808080]">Credit Card</span>
-                            </label>
-                            <div class="flex items-center gap-x-2">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
-                                    class="h-4" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-                                    class="h-4" />
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="Card number"
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                            <input type="text" placeholder="DD / MM / YY"
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                            <input type="text" placeholder="Card holder"
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                            <input type="text" placeholder="CVC"
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                        </div>
-                    </div>
-
-                    <!-- PayPal -->
-                    <div class="flex justify-between bg-[#F2F2F2] p-4">
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="payment" checked />
-                            <span class="dark:text-[#808080]">PayPal</span>
-                        </label>
-                        <div class="flex items-center gap-x-2">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-4" />
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Confirmation -->
-                <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
-                    <h2 class="font-semibold text-lg mb-2 dark:text-[#808080] ">Confirmation</h2>
-                    <p class="text-gray-500 mb-4">We are getting to the end. Just few clicks and your rental is ready!
-                    </p>
-                    <div class="space-y-2 mb-4">
-                        <label class="flex items-center space-x-2">
-                            <input type="checkbox" />
-                            <span class="dark:text-[#808080] text-sm">I agree with sending Marketing and newsletter
-                                emails. No spam, promised!</span>
-                        </label>
-                        <label class="flex items-center space-x-2">
-                            <input type="checkbox" />
-                            <span class="dark:text-[#808080] text-sm">I agree with our terms and conditions and privacy
-                                policy.</span>
-                        </label>
-                    </div>
-                    <div class="flex justify-between flex-col lg:flex-row gap-4">
-                        <p class="text-gray-500 mt-4 flex items-center gap-2">
-                            <i data-lucide="shield-check" class="w-5 h-5"></i>
-                            All your data are safe
-                        </p>
-                        <button class="bg-black dark:bg-white dark:text-black text-white px-6 py-3 w-[160px] text-sm">Pay Now</button>
-
-                    </div>
-                </div>
+    <section id="navigation-link" class="bg-[var(--color-light)] py-2 px-4 dark:bg-[var(--color-dark)]">
+        <div class="container">
+            <div class="navigation-box">
+                <ul class="flex items-center justify-between">
+                    <li class="dark:text-[#808080]"><a href="#"><i data-lucide="chevron-left" class="w-5 h-5"></i></a>
+                    </li>
+                    <li class="dark:text-[#808080]">
+                        Dunk Mythsoe</li>
+                    <li class="dark:text-[#808080]"><a href="#"><i data-lucide="chevron-right" class="w-5 h-5"></i></a>
+                    </li>
+                </ul>
             </div>
-
-            <!-- Right Sidebar -->
-            <aside class="space-y-4">
-                <div class="bg-white p-4 shadow dark:bg-[var(--color-dark)]">
-                    <h2 class="font-semibold text-lg mb-2 dark:text-[#808080]">Order Summary</h2>
-                    <p class="text-gray-500 text-xs mb-4">Prices may change depending on the store of the pickup and the
-                        price of your shoe store place.</p>
-                    <div class="flex items-center space-x-4">
-                        <img src="assets/p2.png" alt="Shoe" class="w-16 h-16 object-cover rounded" />
-                        <div>
-                            <p class="font-semibold dark:text-[#808080]">Nissan GT - R</p>
-                            <p class="text-gray-500 text-sm">Size : 8</p>
-                        </div>
-                    </div>
-                    <div class="mt-4 space-y-2">
-                        <div class="flex justify-between text-[#808080]"><span>Subtotal</span><span>$80.00</span></div>
-                        <div class="flex justify-between text-[#808080]"><span>Tax</span><span>$0</span></div>
-                        <div class="flex">
-                            <input type="text" placeholder="Apply promo code"
-                                class="border border-[#808080] text-sm  px-2 py-3 w-full dark:text-[#808080] bg-transparent outline-none" />
-                            <button class="bg-[#808080] px-2 text-sm text-white w-[120px]">Apply now</button>
-                        </div>
-                        <div class="flex justify-between font-semibold text-lg mt-4 dark:text-[#808080]"><span>Total
-                                Price</span><span>$80.00</span></div>
-                    </div>
-                </div>
-            </aside>
-            <!-- Left Section -->
         </div>
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id="newsletter" class="py-16 bg-[var(--color-light)] py-10 dark:bg-[var(--color-dark)]">
+    <section class="bg-[var(--color-white)] dark:bg-[#1A1A1A]">
         <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
-                <!-- Left Text -->
-                <div class="space-y-4">
-                    <h1 class="text-5xl font-extrabold dark:text-[#808080]">News Letter</h1>
-
-                    <h2 class="text-xl font-semibold dark:text-[#808080]">Become part be the first of our soul</h2>
-                    <p class="text-sm max-w-md dark:text-[#808080]">
-                        Only the absolute pioneers who sign up for our newsletter get a front row seat, because at <span
-                            class="font-semibold">@imithlesharya</span> we cherish those who embrace this adventure with
-                        us from
-                        the very beginning.
+            <div class="flex items-center justify-center min-h-screen px-4">
+                <div class="text-center max-w-md">
+                    <!-- Box Icon -->
+                    <div class="flex justify-center mb-6">
+                        <img src="assets/icons/cancel.png" class="dark:invert" alt="success-img"/>
+                    </div>
+    
+                    <!-- Heading -->
+                    <h1 class="text-2xl font-semibold text-black mb-2 dark:text-[#808080]">Oops! There was an issue</h1>
+    
+                    <!-- Subtext -->
+                    <p class="text-gray-600 mb-6 dark:text-[#808080]">
+                        Oops! There was a problem processing your order. Please review the details and try again.
                     </p>
-                </div>
-
-                <!-- Right Input Field -->
-                <div class="mt-10 md:mt-0 flex flex-col items-start md:items-end space-y-4">
-                    <form class="flex items-center w-full md:w-auto">
-                        <div class="relative w-full md:w-80">
-                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                                <i data-lucide="search" class="w-5 h-5 text-gray-400"></i>
-                            </span>
-                            <input type="email" placeholder="Email Address"
-                                class="w-full pl-10 pr-4 py-2 rounded-full border border-[#808080] bg-transparent focus:outline-none " />
-                        </div>
-                        <button type="submit"
-                            class="ml-4 px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded-full hover:bg-black/80 transition">
-                            Subscribe
-                        </button>
-                    </form>
-                    <p class="text-xs dark:text-[#808080] max-w-sm text-left md:text-right">
-                        Only the absolute pioneers who sign up for our newsletter get a front row seat, because at <span
-                            class="font-semibold">@imithlesharya</span> we cherish those who embrace this adventure with
-                        us from
-                        the very beginning.
-                    </p>
+    
+                    <!-- Button -->
+                    <a href="/shop.html"
+                        class="inline-flex items-center justify-center px-6 py-3 bg-black dark:bg-white text-white dark:text-black dark:hover:bg-white/70 transition">
+                       Reorder
+                       <i data-lucide="arrow-right" class="ml-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
-
     </section>
 
 
