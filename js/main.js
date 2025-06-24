@@ -121,19 +121,62 @@ if(homeMain === 'home'){
 // hero slider
 const heroSlider = new Swiper('.heroSlider', {
   loop: true,
+  slidesPerView: "auto",
+  freeMode: {
+    enabled: true,
+    momentum: true,
+  },
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.heroSlider .swiper-pagination',
     clickable: true,
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  on: {
+    init() {
+      animateHeroSlide(this.slides[this.activeIndex]);
+    },
+    slideChangeTransitionStart() {
+      animateHeroSlide(this.slides[this.activeIndex]);
+    }
+  }
 });
+
+function animateHeroSlide(slideEl) {
+  const content = slideEl.querySelector('.content-wrapper');
+  const banner = slideEl.querySelector('.banner-image');
+
+  gsap.set(content, {
+    opacity: 0,
+    y: 100
+  });
+
+  gsap.set(banner, {
+    scale: 1.15
+  });
+
+  // Animate Content
+  gsap.to(content, {
+    opacity: 1,
+    y: 0,
+    duration: 2,
+    ease: "power3.out",
+    delay: 0.6
+  });
+
+  // Animate Banner Image
+  gsap.to(banner, {
+    scale: 1,
+    duration: 3,
+    ease: "power1.out"
+  });
+}
+
+
+
+
 
 
 // product slider
