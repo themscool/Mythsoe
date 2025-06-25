@@ -29,7 +29,7 @@ export const products = [
     "sizes": [7, 8, 9, 10],
     "colors": ["Multicolor", "White", "Gray"],
     "category": "Men",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p9.jpg",
     "description": "Bold design meets ultimate comfort in the RS-X³ Puzzle sneakers from Puma."
   },
   {
@@ -40,7 +40,7 @@ export const products = [
     "sizes": [5, 6, 7, 8],
     "colors": ["Summit White", "Sail", "Crimson Tint"],
     "category": "Women",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p3.jpg",
     "description": "Double the details and playful layers. The Air Force 1 Shadow is a remix of the classic icon."
   },
   {
@@ -51,7 +51,7 @@ export const products = [
     "sizes": [6, 7, 8, 9, 10],
     "colors": ["White/Green", "White/Navy"],
     "category": "Unisex",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p4.jpg",
     "description": "A clean, retro basketball silhouette revived from the 90s archives for today’s streets."
   },
   {
@@ -62,7 +62,7 @@ export const products = [
     "sizes": [6, 7, 8, 9, 10, 11],
     "colors": ["Chalk", "Green", "White"],
     "category": "Men",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p5.jpg",
     "description": "Clean tennis-inspired style with soft leather and timeless appeal."
   },
   {
@@ -73,7 +73,7 @@ export const products = [
     "sizes": [7, 8, 9, 10, 11],
     "colors": ["White/Black", "Panda"],
     "category": "Unisex",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p6.jpg",
     "description": "The '80s basketball icon returns with premium leather and bold color blocking."
   },
   {
@@ -84,7 +84,7 @@ export const products = [
     "sizes": [6, 7, 8, 9, 10],
     "colors": ["Black", "Glacier Grey"],
     "category": "Men",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p7.jpg",
     "description": "Premium cushioning and stability for long-distance runners and everyday wear."
   },
   {
@@ -95,7 +95,7 @@ export const products = [
     "sizes": [6, 7, 8, 9, 10],
     "colors": ["Black/White"],
     "category": "Unisex",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p8.jpg",
     "description": "The classic Vans silhouette featuring durable canvas and suede with the iconic side stripe."
   },
   {
@@ -106,7 +106,7 @@ export const products = [
     "sizes": [5, 6, 7, 8, 9, 10],
     "colors": ["Black", "White"],
     "category": "Unisex",
-    "image": "./assets/product/p1.png",
+    "image": "./assets/product/p10.jpg",
     "description": "Timeless classic sneakers known for their style, comfort, and versatility."
   }
 ]

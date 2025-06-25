@@ -2,7 +2,8 @@ import { products } from "../data.js";
 window.addEventListener("DOMContentLoaded", () => {
 
   const homeData = document.body.id;
-  const productDeails = document.body.id
+  const productDeails = document.body.id;
+  const productShop = document.body.id;
 
   if (homeData === "home") {
     const productContainer = document.getElementById('product-container')
@@ -107,7 +108,7 @@ window.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <!-- Add to Cart Button -->
-        <button class="w-full bg-black dark:bg-white dark:text-black text-white py-3 hover:opacity-90 mb-4"
+        <button id="addToCart" class="w-full bg-black dark:bg-white dark:text-black text-white py-3 hover:opacity-90 mb-4"
                 onclick="window.location.href='cart.html'">
           Add To Cart
         </button>
@@ -122,6 +123,18 @@ window.addEventListener("DOMContentLoaded", () => {
       </div>
   
   `;
+lucide.createIcons();
+    const addToCart = document.getElementById('addToCart');
+
+    addToCart.addEventListener('click', () => {     
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      cartItems.push(JSON.parse(data));
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    })
+   
+    
+
+
     } else {
       document.getElementById("product-details").innerHTML = `
     <p class="text-center text-red-500 font-semibold col-span-2">No product selected. Please go back and choose one.</p>
@@ -130,6 +143,41 @@ window.addEventListener("DOMContentLoaded", () => {
 
    
   }
+
+  if(productShop === 'shop') {
+    const productData = document.getElementById('productData');
+
+
+    products.forEach(product => {
+      const slide = document.createElement("div");
+      slide.className = "product-item";
+
+      slide.innerHTML = `
+      <div class="text-center cursor-pointer" data-id="${product.id}">
+        <a class="product-link">
+          <img src="${product.image}" alt="${product.name}"
+              class="mx-auto w-full mb-4 h-[400px] object-cover" />
+        </a>
+        <div class="flex justify-between text-sm border-t pt-2">
+          <h2 class="text-xl dark:text-[#808080]">${product.name}</h2>
+          <h2 class="text-xl dark:text-[#808080]">$${product.price}</h2>
+        </div>
+      </div>
+    `;
+
+      // Add click handler
+      slide.querySelector(".product-link").addEventListener("click", () => {
+        localStorage.setItem("selectedProduct", JSON.stringify(product));
+        window.location.href = "shop-details.html";
+      });
+
+      productData.appendChild(slide);
+    });
+
+  }
+
+
+  
 
   
 
