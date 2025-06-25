@@ -1,6 +1,6 @@
 # 👟 Mythsoe – Stylish Footwear Website
 
-![Mythsoe Preview](./assets/template.png)
+![Mythsoe Preview](https://themscool.github.io/Mythsoe/)
 
 Mythsoe is a modern, responsive landing page template built for showcasing footwear brands. It was created using plain HTML, CSS, and JavaScript, with powerful enhancements like **GSAP**, **Swiper.js**, and **Tailwind CSS** for a smooth user experience and beautiful animations.
 
@@ -48,3 +48,11 @@ Mythsoe/
 ├── checkout.html # Checkout page
 ├── thankyou.html # Thankyou page
 ├── failed.html # If payment failed, then this page layout is used
+
+
+## 🧾 How to Use
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/themscool/mythsoe.git
+   cd mythsoe
