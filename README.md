@@ -28,7 +28,7 @@ Mythsoe is a modern, responsive landing page template built for showcasing footw
 
 ## 📸 Live Preview
 
-> 🔗 [Live URL](https://themscool.github.io/Mythsoe/)
+> 🔗 [Live URL](mythsoe.vercel.app)
 
 ---
 
