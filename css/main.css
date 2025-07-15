@@ -4,7 +4,9 @@
   --color-dark: #242424;   
   --color-light: #F6F6F8;  
   --color-white: #FFFFFF; 
+  --color-primary: #FF6600;
 }
+ html { scroll-behavior: smooth; }
 *{
   margin: 0;
   padding: 0;
@@ -93,12 +95,6 @@ line-height: 100%;
 .swiper-button-next::after {
   content: none !important;
 }
-
-
-
-
-
-
 
 
 
